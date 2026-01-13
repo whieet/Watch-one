@@ -3,62 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社区准则更新</title>
+    <title>社区准则更新 - Watch-one</title>
     <style>
+        :root {
+            --primary-color: #2e7d32;
+            --text-color: #333;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
             padding: 40px 20px;
-            background-color: #f4f6f8;
         }
         .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
         }
         h1 {
             color: #1a1a1a;
-            margin-top: 0;
-            margin-bottom: 16px;
-            font-size: 24px;
+            font-size: 32px;
+            margin: 0 0 16px 0;
+            letter-spacing: -0.5px;
         }
         .meta {
             display: flex;
-            gap: 16px;
+            justify-content: center;
+            gap: 24px;
             color: #666;
             font-size: 14px;
-            margin-bottom: 32px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #eaeaea;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
         }
         .content {
-            font-size: 16px;
-            color: #2c2c2c;
+            font-size: 17px;
+            color: #444;
+        }
+        .quote-box {
+            background-color: #e8f5e9;
+            border-left: 4px solid var(--primary-color);
+            padding: 24px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #2e7d32;
+        }
+        .rule-list {
+            list-style: none;
+            padding: 0;
+            counter-reset: rule-counter;
+        }
+        .rule-item {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+        .rule-item::before {
+            counter-increment: rule-counter;
+            content: counter(rule-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .rule-title {
+            font-weight: bold;
+            color: #2e7d32;
+            display: block;
+            margin-bottom: 6px;
         }
         .footer {
-            margin-top: 48px;
+            margin-top: 60px;
             text-align: center;
-            font-size: 13px;
+            font-size: 14px;
             color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>社区准则更新</h1>
-        <div class="meta">
-            <span>📅 2023-10-20 18:45:00</span>
-            <span>👤 社区运营</span>
+        <div class="header">
+            <span class="icon">📜</span>
+            <h1>社区准则更新</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <span>📅 2023-10-20 18:45:00</span>
+                </div>
+                <div class="meta-item">
+                    <span>👤 社区运营</span>
+                </div>
+                <div class="meta-item">
+                    <span>🏷️ 社区公告</span>
+                </div>
+            </div>
         </div>
+
         <div class="content">
-            <p>为了营造更好的社区环境，我们要更新了社区准则，请大家花一点时间阅读。</p>
+            <p>亲爱的 Watch-one 社区成员：</p>
+            <p>随着社区规模的不断扩大，为了维护一个更加开放、友善、健康的交流环境，我们对《社区准则》进行了重要更新。此次更新重点细化了关于原创内容保护和文明互动的条款。</p>
+            
+            <div class="quote-box">
+                "我们相信，一个优秀的社区是由每一个成员共同构建的。尊重他人、分享价值，是我们共同的基石。"
+            </div>
+
+            <h3>📋 核心更新内容</h3>
+            <ul class="rule-list">
+                <li class="rule-item">
+                    <span class="rule-title">鼓励原创与版权保护</span>
+                    我们新增了对原创作者的激励机制，严厉打击抄袭和未经授权的转载行为。分享他人内容时，必须注明清晰的来源链接。
+                </li>
+                <li class="rule-item">
+                    <span class="rule-title">拒绝网络暴力</span>
+                    禁止任何形式的人身攻击、骚扰、歧视性言论。我们倡导理性讨论，对事不对人，即使意见不合也请保持基本的礼貌。
+                </li>
+                <li class="rule-item">
+                    <span class="rule-title">广告与推广规范</span>
+                    严禁发布无关的垃圾广告。合理的个人项目推广请发布在专门的"展示"板块，并遵循相应的发布频率限制。
+                </li>
+            </ul>
+
+            <p>本次更新将于 <strong>2023年11月1日</strong> 正式生效。请大家花一点时间阅读完整版《社区准则》。如果您对新规则有任何疑问或建议，欢迎在评论区留言或联系版主。</p>
+            
+            <p>让我们携手共建更美好的 Watch-one 社区！🌱</p>
         </div>
+
         <div class="footer">
-            Watch-one Official Blog
+            &copy; 2023 Watch-one Team. All rights reserved.
         </div>
     </div>
 </body>

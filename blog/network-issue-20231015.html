@@ -1,65 +1,245 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于近期网络波动的说明</title>
+    <title>关于近期网络波动的说明 - Watch-one</title>
     <style>
+        :root {
+            --primary-color: #d32f2f;
+            --text-color: #333;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f4f6f8;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
         }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
         h1 {
             color: #1a1a1a;
-            margin-top: 0;
-            margin-bottom: 16px;
-            font-size: 24px;
+            font-size: 32px;
+            margin: 0 0 16px 0;
+            letter-spacing: -0.5px;
         }
+
         .meta {
             display: flex;
-            gap: 16px;
+            justify-content: center;
+            gap: 24px;
             color: #666;
             font-size: 14px;
-            margin-bottom: 32px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #eaeaea;
         }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
         .content {
-            font-size: 16px;
-            color: #2c2c2c;
+            font-size: 17px;
+            color: #444;
         }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .info-card {
+            background-color: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 30px 0;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 12px;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .info-value {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .progress-section {
+            margin-top: 40px;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .step-icon {
+            width: 24px;
+            height: 24px;
+            background: #eee;
+            border-radius: 50%;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .step.done .step-icon {
+            background: #4caf50;
+            color: white;
+        }
+
+        .step.active .step-icon {
+            background: #2196f3;
+            color: white;
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+        }
+
+        .step-content h4 {
+            margin: 0 0 4px 0;
+            font-size: 16px;
+        }
+
+        .step-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
         .footer {
-            margin-top: 48px;
+            margin-top: 60px;
             text-align: center;
-            font-size: 13px;
+            font-size: 14px;
             color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>关于近期网络波动的说明</h1>
-        <div class="meta">
-            <span>📅 2023-10-15 11:20:45</span>
-            <span>👤 技术支持</span>
+        <div class="header">
+            <span class="icon">📡</span>
+            <h1>关于近期网络波动的说明</h1>
+            <div class="status-badge">处理中</div>
+            <div class="meta" style="margin-top: 16px;">
+                <div class="meta-item">
+                    <span>📅 2023-10-15 11:20:45</span>
+                </div>
+                <div class="meta-item">
+                    <span>👤 技术支持</span>
+                </div>
+                <div class="meta-item">
+                    <span>🏷️ 故障通报</span>
+                </div>
+            </div>
         </div>
+
         <div class="content">
-            <p>近期部分用户反馈访问速度变慢，经排查是由于运营商线路故障导致，目前正在积极协调修复中。</p>
+            <p>尊敬的用户：</p>
+            <p>我们注意到，从今日上午 10:00 左右开始，部分用户在访问 Watch-one 网页及使用 APP 时出现了加载缓慢、连接超时的情况。经技术团队紧急排查，确认此次问题源于上游运营商的主干线路故障。</p>
+
+            <div class="info-card">
+                <div class="info-row">
+                    <span class="info-label">影响范围</span>
+                    <span class="info-value">华东地区部分用户</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">故障原因</span>
+                    <span class="info-value">骨干网光纤故障</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">预计恢复</span>
+                    <span class="info-value">2小时内 (13:30 前)</span>
+                </div>
+            </div>
+
+            <h3>🛠️ 修复进度</h3>
+            <div class="progress-section">
+                <div class="step done">
+                    <div class="step-icon">✓</div>
+                    <div class="step-content">
+                        <h4>发现异常</h4>
+                        <p>10:05 AM - 监控系统报警，收到首批用户反馈。</p>
+                    </div>
+                </div>
+                <div class="step done">
+                    <div class="step-icon">✓</div>
+                    <div class="step-content">
+                        <h4>定位原因</h4>
+                        <p>10:35 AM - 确认故障点位于运营商上海数据中心节点。</p>
+                    </div>
+                </div>
+                <div class="step active">
+                    <div class="step-icon">🔄</div>
+                    <div class="step-content">
+                        <h4>正在修复</h4>
+                        <p>11:20 AM - 运营商已派遣工程队现场抢修，同时我们已启动备用线路分流流量。</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>目前我们正在积极与运营商协调，并已切换至备用 CDN 节点以缓解访问压力。绝大多数用户的访问体验应已逐步恢复正常。</p>
+            <p>对于此次网络波动给您造成的不便，我们深表歉意，并将持续跟进直至问题彻底解决。</p>
         </div>
+
         <div class="footer">
-            Watch-one Official Blog
+            &copy; 2023 Watch-one Team. All rights reserved.
         </div>
     </div>
 </body>
+
 </html>

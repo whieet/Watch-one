@@ -1,65 +1,169 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>系统维护通知</title>
+    <title>系统维护通知 - Watch-one</title>
     <style>
+        :root {
+            --primary-color: #0066cc;
+            --warning-color: #f59e0b;
+            --text-color: #333;
+            --bg-color: #f4f6f8;
+            --card-bg: #ffffff;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #f4f6f8;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
         }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
         h1 {
             color: #1a1a1a;
-            margin-top: 0;
-            margin-bottom: 16px;
-            font-size: 24px;
+            font-size: 32px;
+            margin: 0 0 16px 0;
+            letter-spacing: -0.5px;
         }
+
         .meta {
             display: flex;
-            gap: 16px;
+            justify-content: center;
+            gap: 24px;
             color: #666;
             font-size: 14px;
-            margin-bottom: 32px;
-            padding-bottom: 24px;
-            border-bottom: 1px solid #eaeaea;
         }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
         .content {
-            font-size: 16px;
-            color: #2c2c2c;
+            font-size: 17px;
+            color: #444;
         }
+
+        .alert-box {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--warning-color);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .timeline {
+            margin: 40px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .time {
+            font-weight: bold;
+            min-width: 120px;
+            color: var(--primary-color);
+        }
+
+        .event {
+            color: #555;
+        }
+
         .footer {
-            margin-top: 48px;
+            margin-top: 60px;
             text-align: center;
-            font-size: 13px;
+            font-size: 14px;
             color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>系统维护通知</h1>
-        <div class="meta">
-            <span>📅 2023-10-27 09:30:00</span>
-            <span>👤 系统管理员</span>
+        <div class="header">
+            <span class="icon">🔧</span>
+            <h1>系统维护通知</h1>
+            <div class="meta">
+                <div class="meta-item">
+                    <span>📅 2023-10-27 09:30:00</span>
+                </div>
+                <div class="meta-item">
+                    <span>👤 系统管理员</span>
+                </div>
+                <div class="meta-item">
+                    <span>🏷️ 维护公告</span>
+                </div>
+            </div>
         </div>
+
         <div class="content">
-            <p>我们将于本周六凌晨 2:00 进行系统维护，预计持续 2 小时。期间服务可能会中断，请提前做好准备。</p>
+            <p>尊敬的用户：</p>
+            <p>为了给您提供更加稳定、优质的服务体验，我们将于本周六对服务器进行例行维护升级。此次维护旨在优化数据库性能并提升系统的整体安全性。</p>
+
+            <div class="alert-box">
+                <strong>⚠️ 注意事项：</strong> 维护期间，所有在线服务将暂时无法访问，包括但不限于数据同步、账户登录及API调用。请您提前做好业务安排，避免在维护时段进行重要操作。
+            </div>
+
+            <h3>🕒 维护时间表</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time">02:00 AM</span>
+                    <span class="event">开始系统维护，停止对外服务</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">02:30 AM</span>
+                    <span class="event">数据库备份与核心组件升级</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">03:30 AM</span>
+                    <span class="event">系统重启与功能验证</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">04:00 AM</span>
+                    <span class="event">预计维护结束，恢复正常服务</span>
+                </div>
+            </div>
+
+            <p>我们对由此给您带来的不便深表歉意。如果在维护结束后您遇到任何问题，请随时通过客服渠道联系我们。</p>
+
+            <p>感谢您的理解与支持！</p>
         </div>
+
         <div class="footer">
-            Watch-one Official Blog
+            &copy; 2023 Watch-one Team. All rights reserved.
         </div>
     </div>
 </body>
+
 </html>
