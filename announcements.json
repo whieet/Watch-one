@@ -6,7 +6,7 @@
     "date": "2023-10-27 09:30:00",
     "type": "maintenance",
     "author": "系统管理员",
-    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/maintenance-20231027.html"
+    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/maintenance-202310271.html"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "date": "2023-10-25 14:15:20",
     "type": "news",
     "author": "产品团队",
-    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/dark-mode-released.html"
+    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/dark-mode-released1.html"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "date": "2023-10-20 18:45:00",
     "type": "announcement",
     "author": "社区运营",
-    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/community-guidelines-update.html"
+    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/community-guidelines-update1.html"
   },
   {
     "id": 4,
@@ -33,6 +33,6 @@
     "date": "2023-10-15 11:20:45",
     "type": "alert",
     "author": "技术支持",
-    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/network-issue-20231015.html"
+    "html_url": "https://raw.githubusercontent.com/whieet/Watch-one/refs/heads/main/blog/network-issue-202310151.html"
   }
 ]
