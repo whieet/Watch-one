@@ -5,7 +5,8 @@
     "content": "我们将于本周六凌晨 2:00 进行系统维护，预计持续 2 小时。期间服务可能会中断，请提前做好准备。",
     "date": "2023-10-27 09:30:00",
     "type": "maintenance",
-    "author": "系统管理员"
+    "author": "系统管理员",
+    "html_url": "/announcements/maintenance-20231027.html"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "content": "很高兴地通知大家，我们刚刚上线了期待已久的暗黑模式！您可以在设置中开启体验。",
     "date": "2023-10-25 14:15:20",
     "type": "news",
-    "author": "产品团队"
+    "author": "产品团队",
+    "html_url": "/announcements/dark-mode-released.html"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "content": "为了营造更好的社区环境，我们要更新了社区准则，请大家花一点时间阅读。",
     "date": "2023-10-20 18:45:00",
     "type": "announcement",
-    "author": "社区运营"
+    "author": "社区运营",
+    "html_url": "/announcements/community-guidelines-update.html"
   },
   {
     "id": 4,
@@ -29,6 +32,7 @@
     "content": "近期部分用户反馈访问速度变慢，经排查是由于运营商线路故障导致，目前正在积极协调修复中。",
     "date": "2023-10-15 11:20:45",
     "type": "alert",
-    "author": "技术支持"
+    "author": "技术支持",
+    "html_url": "/announcements/network-issue-20231015.html"
   }
 ]
